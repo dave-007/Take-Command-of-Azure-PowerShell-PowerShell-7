@@ -26,8 +26,11 @@ $storageAccount = New-AzStorageAccount -ResourceGroupName $myResourceGroupName `
 
 $storageAccount | Get-Member
 
-#TODO Create container in that storage account
 $myContext = $storageAccount.Context
+
+$myContainerName = 'images'
+New-AzStorageContainer -Context $myContext -Name $myContainerName
+
 
 # Get a file from the web to upload
 $myImageUrl
@@ -36,8 +39,10 @@ $myImageFullTempPath = Join-Path -Path $env:TEMP -ChildPath $myImageFileName
 Invoke-WebRequest -Uri $myImageUrl -OutFile $myImageFullTempPath
 
 # Upload the file to storage
-$containerName = 'images'
 Set-AzStorageBlobContent -File $myImageFullTempPath `
-    -Container $containerName `
+    -Container $myContainerName `
     -Blob $myImageFileName `
     -Context $myContext
+
+# Delete Storage Account
+Remove-AzStorageAccount -ResourceGroupName $myResourceGroupName -Name $myStorageAccountName
