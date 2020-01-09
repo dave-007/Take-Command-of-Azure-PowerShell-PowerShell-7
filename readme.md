@@ -67,4 +67,6 @@ David loves to learn and solve problems with technology, and teach others to do 
 * Terraform
 
 ## Q & A
+
+## [References and useful resources](./references.md)
 ## [Please reach out](https://davidcobb.net/index.php/contact/) if you enjoyed or have questions
