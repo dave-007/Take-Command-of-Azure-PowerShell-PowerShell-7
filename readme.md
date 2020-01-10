@@ -11,18 +11,18 @@ About the Speaker:
 
 David loves to learn and solve problems with technology, and teach others to do the same. He is principal consultant for Cobb Information Technologies since 1996, providing technology training and consulting for his clients. He is a MCT since 2002, certified in Azure Admin & Data Platform and AWS Sysops & Architect.
 
-# :) Warning and Guidance :)
-## This is a CODE-INTENSIVE presentation/tutorial. 
-## My goal is to encourage you to learn by doing after this presentation.
-## [All code available on GitHub](https://github.com/dave-007/Take-Command-of-Azure-PowerShell-PowerShell-7), and designed for you to fork or clone and step through (and customize and extend) on your own.
+## Guidance
+### This is a CODE-INTENSIVE presentation/tutorial. 
+### My goal is to encourage you to learn by doing after this presentation.
+### [All code available on GitHub](https://github.com/dave-007/Take-Command-of-Azure-PowerShell-PowerShell-7), and designed for you to fork or clone and step through (and customize and extend) on your own.
 ## Submit an issue if you have question or find a problem [Submit an Issue on the GitHub Repo](https://github.com/dave-007/Take-Command-of-Azure-PowerShell-PowerShell-7/issues).
 
-# Goals for this Session
-## Brief background on PS & Azure and the migration to PSCore/PS7
-## Into the code with PowerShell basics
-## Deeper into the code with PowerShell AZ Module
-## Learning syntax, command features, shortcuts
-## Increase understanding and confidence in Azure using PowerShell
+## Goals for this Session
+### Brief background on PS & Azure and the migration to PSCore/PS7
+### Into the code with PowerShell basics
+### Deeper into the code with PowerShell AZ Module
+### Learning syntax, command features, shortcuts
+### Increase understanding and confidence in Azure using PowerShell
 
 # PowerShell - _Brief_ History
 ## The Windows Years
@@ -39,7 +39,7 @@ David loves to learn and solve problems with technology, and teach others to do 
 * [PowerShell 7 RC1](https://devblogs.microsoft.com/powershell/announcing-the-powershell-7-0-release-candidate/)
 ## Installing
 ### [Windows (using PSReleaseTools)](https://mikefrobbins.com/2019/07/11/install-powershell-7-with-jeff-hicks-psreleasetools-module/)
-### [Linux /WSL](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows?view=powershell-7)
+### [Linux/WSL](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows?view=powershell-7)
 
 # My Environment
 * Win10 (could be any, because all cross platform)
