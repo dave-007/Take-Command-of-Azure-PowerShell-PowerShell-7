@@ -10,6 +10,7 @@ Get-Command -Module Az.Storage
 Get-Command -Module Az.Storage | Group-Object -Property Verb
 # See nouns
 Get-Command -Module Az.Storage | Group-Object -Property Noun
+Get-Command -Module Az.Storage -Name *share*
 
 #See existing storage accounts, note the cloud shell
 Get-AzStorageAccount

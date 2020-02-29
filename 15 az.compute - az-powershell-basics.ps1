@@ -23,13 +23,16 @@ Get-Help Get-Credential -Examples
 # OR use KeyVault secret to build a credential
 
 #Retreive sysadmin password from KeyVault, keep as a secure string
-$AdminPasswordSecret = Get-AzKeyVaultSecret -vaultName $myVaultName -name "AdminPassword"
+$AdminPasswordSecret = Get-AzKeyVaultSecret `
+-vaultName $myVaultName `
+-name "AdminPassword"
 
 # Build creds for local sysadmin
 $UserName =  'dcadmin'
 $cred = New-Object System.Management.Automation.PSCredential ($UserName, $AdminPasswordSecret.SecretValue)
 
-
+$AdminPasswordSecret | Get-Member
+$AdminPasswordSecret.SecretValueText
 $cred
 
 $myResourceGroupName
@@ -38,31 +41,32 @@ $myResourceGroupName
 # see https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_splatting
 $vmParams = @{
     ResourceGroupName   = $myResourceGroupName
-    Name                = "mcsfugVM2"
+    Name                = "sfsdcVM3"
     Location            = $myRG.Location
     ImageName           = "Win2016Datacenter"
-    PublicIpAddressName = "mcsfugPublicIp2"
+    PublicIpAddressName = "sfsdcPublicIp2"
     Credential          = $cred
     OpenPorts           = 3389
 }
 
-$newVM2 = New-AzVM @vmParams -Debug
+$newVM3 = New-AzVM @vmParams -Debug
 
 $newVM2
 
 #Connect to that VM!
-mstsc /v $newVM1.FullyQualifiedDomainName
+mstsc /v $newVM3.FullyQualifiedDomainName
 
 #Stop to save $$$
 $newVM2 | Stop-AzVM -Force
 # or
-Stop-AzVM -Name mcsfugVM1 -ResourceGroupName $myResourceGroupName
+Stop-AzVM -Name sfsdcVM1 -ResourceGroupName $myResourceGroupName
 # or stop all
-Get-AzVM -ResourceGroupName $myResourceGroupName | Stop-AzVM -Force
+Get-AzVM -ResourceGroupName $myResourceGroupName | 
+  Stop-AzVM -Force
 
 Get-AzVM -Status
 
 #Start it later?
 # or
-Start-AzVM -Name mcsfugVM1 -ResourceGroupName $myResourceGroupName
+Start-AzVM -Name sfsdcVM1 -ResourceGroupName $myResourceGroupName
 Get-AzVM -Status

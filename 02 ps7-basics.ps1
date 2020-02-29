@@ -21,6 +21,7 @@ Get-Command -Noun Process
 
 # GET-MEMBER, for examining objects
 $myVariable = 'Testing 1 2 3'
+
 $myVariable | Get-Member
 # This is a .Net Core type, see
 # https://docs.microsoft.com/en-us/dotnet/api/system.string?view=netcore-3.1

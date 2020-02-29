@@ -17,18 +17,18 @@ Get-AzResourceGroup
 # Create a resource group
 #Instead of defining this here, I'll define it in _settings.ps1 and 'dot source' it
 #This is like an include file, so I can use it in other scripts
-#$myResourceGroupName = 'mcsfug-demo'
+#$myResourceGroupName = 'sfsdc-demo'
 # Put your settings into this _my-settings.ps1 file to use these scripts
 . ./_my-settings.ps1
 Get-Help New-AzResourceGroup -Examples
 #Add the -Debug switch to see the underlying details including the API call
-New-AzResourceGroup -Name $myResourceGroupName -Location $myLocationN -Debug
+New-AzResourceGroup -Name $myResourceGroupName -Location $myLocation -Debug
 
 # Can I set this as default resource group?
-Get-Help Set-AzDefault -Full
+Get-Help Set-AzDefault -ShowWindow
 
 
 Set-AzDefault -ResourceGroupName $myResourceGroupName
 
-Get-AzDefault
+Get-AzDefault | Select-Object *
 
