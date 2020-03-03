@@ -41,10 +41,10 @@ $myResourceGroupName
 # see https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_splatting
 $vmParams = @{
     ResourceGroupName   = $myResourceGroupName
-    Name                = "sfsdcVM3"
+    Name                = "dpsugVM3"
     Location            = $myRG.Location
     ImageName           = "Win2016Datacenter"
-    PublicIpAddressName = "sfsdcPublicIp2"
+    PublicIpAddressName = "dpsugPublicIp2"
     Credential          = $cred
     OpenPorts           = 3389
 }
@@ -59,7 +59,7 @@ mstsc /v $newVM3.FullyQualifiedDomainName
 #Stop to save $$$
 $newVM2 | Stop-AzVM -Force
 # or
-Stop-AzVM -Name sfsdcVM1 -ResourceGroupName $myResourceGroupName
+Stop-AzVM -Name dpsugVM1 -ResourceGroupName $myResourceGroupName
 # or stop all
 Get-AzVM -ResourceGroupName $myResourceGroupName | 
   Stop-AzVM -Force
@@ -68,5 +68,5 @@ Get-AzVM -Status
 
 #Start it later?
 # or
-Start-AzVM -Name sfsdcVM1 -ResourceGroupName $myResourceGroupName
+Start-AzVM -Name dpsugVM1 -ResourceGroupName $myResourceGroupName
 Get-AzVM -Status

@@ -35,7 +35,7 @@ Get-Help Get-Credential -Examples
 $cred = Get-Credential 
 Connect-AzAccount -Credential $cred #not yet supported in PSCore/PS7
 
-# I like to look at the Get-* cmdlets for a given module to see what I can see
+# First, I like to look at the Get-* cmdlets for a given module to see what I can see
 Get-Command -Module Az.Accounts -Verb Get
      
 # See what some use Az.Account cmdlets return

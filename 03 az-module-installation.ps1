@@ -31,7 +31,9 @@ Import-Module AZ
 Get-Command -Module AZ.* | Measure-Object
 
 # Look in each AZ module for commands
-Get-Module Az.* 
+Get-Module Az.* # only shows those modules loaded into session
+Get-Module Az.* -ListAvailable
+
 
 # Get all commands for all AZ modules (long)
 Get-Module AZ.* | ForEach-Object { Get-Command -Module $PSItem } 

@@ -18,7 +18,7 @@ $myRG | Get-Member
 # Can use the location property of our resource group to set the location of the KeyVault, less hard coding
 $myRG.Location 
 
-$myVaultName = 'sfsdc-Vault99'
+$myVaultName = 'dpsug-Vault99'
 New-AzKeyVault -Name $myVaultName -ResourceGroupName $myResourceGroupName -Location $myRG.Location
 
 # Store a secret in the vault we can use in VM creation
