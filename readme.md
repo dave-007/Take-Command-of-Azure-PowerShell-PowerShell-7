@@ -90,4 +90,4 @@ David loves to learn and solve problems with technology, and teach others to do 
 
 ## [Please reach out](https://davidcobb.net/index.php/contact/) if you enjoyed or have questions
 
-## Thanks!                                                                                                                                                                                                                                                                                                                                                                                                                                                
+## Thanks!

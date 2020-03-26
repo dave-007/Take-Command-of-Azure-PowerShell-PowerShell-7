@@ -22,7 +22,7 @@ Get-Help Get-Credential -Examples
 #$cred = Get-Credential -User dcadmin 
 # OR use KeyVault secret to build a credential
 
-#Retreive sysadmin password from KeyVault, keep as a secure string
+#Retrieve sysadmin password from KeyVault, keep as a secure string
 $AdminPasswordSecret = Get-AzKeyVaultSecret `
 -vaultName $myVaultName `
 -name "AdminPassword"
@@ -41,21 +41,24 @@ $myResourceGroupName
 # see https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_splatting
 $vmParams = @{
     ResourceGroupName   = $myResourceGroupName
-    Name                = "dpsugVM3"
+    Name                = "$myResourceGroupName-VM1"
     Location            = $myRG.Location
     ImageName           = "Win2016Datacenter"
-    PublicIpAddressName = "dpsugPublicIp2"
+    PublicIpAddressName = "$myResourceGroupName-PublicIp1"
     Credential          = $cred
     OpenPorts           = 3389
 }
 
-$newVM3 = New-AzVM @vmParams -Debug
+# Create the VM 
+$newVM1 = New-AzVM @vmParams 
 
-$newVM2
+$newVM1
 
 #Connect to that VM!
-mstsc /v $newVM3.FullyQualifiedDomainName
+mstsc /v $newVM1.FullyQualifiedDomainName
 
+# testing
+# mstsc /v passtest-rg-vm1-63211f.eastus2.cloudapp.azure.com
 #Stop to save $$$
 $newVM2 | Stop-AzVM -Force
 # or

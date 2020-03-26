@@ -2,7 +2,7 @@
 # 
 Exit #Prevent F5
 # See commands, their nouns and verbs to get a high level sense of what we can do with this module
-Get-Command -Module Az.Resources
+Get-Command -Module Az.Resources # | Out-GridView  # For windows users
 # See verbs
 Get-Command -Module Az.Resources | Group-Object -Property Verb
 # See nouns
@@ -20,15 +20,17 @@ Get-AzResourceGroup
 #$myResourceGroupName = 'dpsug-demo'
 # Put your settings into this _my-settings.ps1 file to use these scripts
 . ./_my-settings.ps1
+$myResourceGroupName
 Get-Help New-AzResourceGroup -Examples
 #Add the -Debug switch to see the underlying details including the API call
-New-AzResourceGroup -Name $myResourceGroupName -Location $myLocation -Debug
+New-AzResourceGroup -ResourceGroupName $myResourceGroupName -Location $myLocation -Debug
+Show-Command New-AzResourceGroup
 
 # Can I set this as default resource group?
 Get-Help Set-AzDefault -ShowWindow
 
 
-Set-AzDefault -ResourceGroupName $myResourceGroupName
+Set-AzDefault -ResourceGroupName $myResourceGroupName 
 
 Get-AzDefault | Select-Object *
 

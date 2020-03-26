@@ -17,7 +17,7 @@ Get-AzStorageAccount
 
 #Create a new Storage account, what are out options
 
-Get-Help New-AzStorageAccount -Examples
+Get-Help New-AzStorageAccount -ShowWindow  # ShowWindow for windows users
 
 # ` <-- Note these backticks '`' are a line continuation character
 $storageAccount = New-AzStorageAccount -ResourceGroupName $myResourceGroupName `
@@ -25,7 +25,7 @@ $storageAccount = New-AzStorageAccount -ResourceGroupName $myResourceGroupName `
     -SkuName Standard_LRS `
     -Location $myLocation
 
-$storageAccount | Get-Member
+$storageAccount | Get-Member 
 
 $myContext = $storageAccount.Context
 
@@ -47,3 +47,4 @@ Set-AzStorageBlobContent -File $myImageFullTempPath `
 
 # Delete Storage Account
 Remove-AzStorageAccount -ResourceGroupName $myResourceGroupName -Name $myStorageAccountName
+

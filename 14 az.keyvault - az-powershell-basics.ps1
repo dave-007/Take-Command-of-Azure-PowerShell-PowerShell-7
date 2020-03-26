@@ -18,13 +18,13 @@ $myRG | Get-Member
 # Can use the location property of our resource group to set the location of the KeyVault, less hard coding
 $myRG.Location 
 
-$myVaultName = 'dpsug-Vault99'
+$myVaultName = "$myResourceGroupName-Vault99"
 New-AzKeyVault -Name $myVaultName -ResourceGroupName $myResourceGroupName -Location $myRG.Location
 
 # Store a secret in the vault we can use in VM creation
 $myPassword = '5uP3r53r3+'
 # Alternately, enter password at prompt
-$myPassword = Read-Host -Prompt "Enter Password to store in vault"
+# $myPassword = Read-Host -Prompt "Enter Password to store in vault"
 Write-Host "Your secret password is $myPassword"
 
 $secretValue = ConvertTo-SecureString $myPassword -AsPlainText -Force
@@ -33,5 +33,5 @@ $secret = Set-AzKeyVaultSecret `
   -Name 'AdminPassword' `
   -SecretValue $secretValue
 
-# If we need to get the secret value text
+# If we need to get the secret value text, note the -Debug flag to look under the covers
 (Get-AzKeyVaultSecret -vaultName $myVaultName -name "AdminPassword" -Debug).SecretValueText

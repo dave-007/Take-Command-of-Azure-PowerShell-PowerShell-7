@@ -18,10 +18,12 @@ Find-Module AZ  #EXACTLY AZ
 # Install AZ module
 Install-Module AZ #as Admin or with -Scope CurrentUser
 
+# To stay current, update the AZ module to the latest version
+Update-Module AZ
 
 # See installed modules
 Get-Module -ListAvailable
-# Seee imported (in session) modules
+# See imported (in session) modules
 Get-Module
 
 #Import the module 

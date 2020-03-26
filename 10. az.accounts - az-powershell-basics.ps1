@@ -16,6 +16,9 @@ Get-Command -Module Az.Accounts -Noun AzAccount
 
 #Login-AzAccount looks helpful
 Get-Help Login-AzAccount -Examples
+# For windows users, try -ShowWindow
+Get-Help Login-AzAccount -ShowWindow
+
 
 #Login-AzAccount is an alias for 'Connect-AzAccount'
 Get-Alias -Definition Connect-AzAccount
