@@ -17,7 +17,7 @@ Get-AzResourceGroup
 # Create a resource group
 #Instead of defining this here, I'll define it in _settings.ps1 and 'dot source' it
 #This is like an include file, so I can use it in other scripts
-#$myResourceGroupName = 'sfsdc-demo'
+#$myResourceGroupName = 'dpsug-demo'
 # Put your settings into this _my-settings.ps1 file to use these scripts
 . ./_my-settings.ps1
 Get-Help New-AzResourceGroup -Examples

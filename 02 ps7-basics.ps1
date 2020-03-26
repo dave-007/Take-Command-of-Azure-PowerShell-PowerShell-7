@@ -9,7 +9,7 @@ Get-Help
 Get-Help Get-Command # For each command
 Get-Help Get-Command -Online # link to online docs where available
 Get-Help about_* # For general PowerShell topics
-Get-Help about_PowerShell_Editions -Online
+Get-Help about_PowerShell_Editions
 
 # GET-COMMAND
 Get-Command # See all
