@@ -9,7 +9,7 @@ Using the latest PowerShell 7 release, we'll begin from first login, discovering
 About the Speaker:
 [David Cobb](https://davidcobb.net), Principal Consultant of Cobb Information Technologies
 
-David loves to learn and solve problems with technology, and teach others to do the same. He is principal consultant for Cobb Information Technologies since 1996, providing technology training and consulting for his clients. He is a MCT since 2002, certified in Azure Admin & Data Platform and AWS Sysops & Architect.
+David loves to learn and solve problems with technology, and teach others to do the same. He is principal consultant for Cobb Information Technologies since 1996, providing technology training and consulting for his clients. He is a MCT since 2002, certified in Azure DevOps, Admin & Data Platform and AWS Sysops & Architect.
 
 ## Guidance
 ### This is a CODE-INTENSIVE presentation/tutorial. 
@@ -55,7 +55,7 @@ David loves to learn and solve problems with technology, and teach others to do 
 * Win10 (could be any, because all cross platform)
 * VSCode with extensions (PowerShell Preview, Azure Account)
 * PS 7, AZ Module Installed
-    
+  
 ## PowerShell Primer
 * How to run PowerShell 7
 * PowerShell Basics
@@ -83,5 +83,4 @@ David loves to learn and solve problems with technology, and teach others to do 
 
 ## [References and useful resources](./references.md)
 
-## [Please reach out](https://davidcobb.net/index.php/contact/) if you enjoyed or have questions
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+## [Please reach out](https://davidcobb.net/index.php/contact/) if you enjoyed or have questions                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
