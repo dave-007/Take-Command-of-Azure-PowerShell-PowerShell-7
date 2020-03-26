@@ -16,16 +16,20 @@ David loves to learn and solve problems with technology, and teach others to do 
 ### My goal is to encourage you to learn by doing after this presentation.
 ### [All code available on GitHub](https://github.com/dave-007/Take-Command-of-Azure-PowerShell-PowerShell-7), and designed for you to fork or clone and step through (and customize and extend) on your own.
 
-## Submit an issue if you have question or find a problem [Submit an Issue on the GitHub Repo](https://github.com/dave-007/Take-Command-of-Azure-PowerShell-PowerShell-7/issues).
+## Submit an issue if you have question or find a problem 
+
+* [Submit an Issue on the GitHub Repo](https://github.com/dave-007/Take-Command-of-Azure-PowerShell-PowerShell-7/issues).
 
 ## Goals for this Session
-### Brief background on PS & Azure and the migration to PSCore/PS7
-### Into the code with PowerShell basics
-### Deeper into the code with PowerShell AZ Module
-### Learning syntax, command features, shortcuts
-### Increase understanding and confidence in Azure using PowerShell
+
+* Brief background on PS & Azure and the migration to PSCore/PS7
+* Into the code with PowerShell basics
+* Deeper into the code with PowerShell AZ Module
+* Learning syntax, command features, shortcuts
+* Increase understanding and confidence in Azure using PowerShell
 
 ## PowerShell - _Brief_ History
+
 ### The Windows Years
 
 * PowerShell for Windows 2-5.1
@@ -57,6 +61,7 @@ David loves to learn and solve problems with technology, and teach others to do 
 * PS 7, AZ Module Installed
   
 ## PowerShell Primer
+
 * How to run PowerShell 7
 * PowerShell Basics
   
@@ -83,4 +88,6 @@ David loves to learn and solve problems with technology, and teach others to do 
 
 ## [References and useful resources](./references.md)
 
-## [Please reach out](https://davidcobb.net/index.php/contact/) if you enjoyed or have questions                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+## [Please reach out](https://davidcobb.net/index.php/contact/) if you enjoyed or have questions
+
+## Thanks!                                                                                                                                                                                                                                                                                                                                                                                                                                                
