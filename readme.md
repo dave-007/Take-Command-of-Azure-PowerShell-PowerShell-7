@@ -1,9 +1,9 @@
-# Topic: Take Command of Azure PowerShell & PowerShell 7
+# Topic: Take Command of Azure PowerShell
 
 ## Abstract
 Cloud providers like Azure continually deliver new features and capabilities each day, like pieces to an ever expanding puzzle. I've found an edge to the puzzle in Azure PowerShell, and I'll share that edge with you in this beginner level session.
 
-Using the latest PowerShell 7 release, we'll begin from first login, discovering command syntax, common command features and shortcuts, and how command line increases your understanding and ability to build confidently in the cloud.
+Using PowerShell 7, we'll begin from first login, discovering command syntax, common command features and shortcuts, and how command line increases your understanding and ability to build confidently in the cloud.
 
 ## Bio
 About the Speaker:
